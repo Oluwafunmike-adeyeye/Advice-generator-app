@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AdviceDisplay from './components/AdviceDisplay';
 
-function App() {
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col max-w-[1640px] md:w-[1640px] h-[810px] md:h-[810px] bg-[#202733] items-center justify-center">
+      <AdviceDisplay />
     </div>
   );
-}
+};
 
 export default App;
